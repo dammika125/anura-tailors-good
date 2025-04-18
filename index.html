@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>අනුර ටෙලර්ස්</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Noto Sans Sinhala', sans-serif;
+      background: linear-gradient(to bottom, #bbdefb, #e3f2fd);
+      margin: 0;
+      padding: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: radial-gradient(circle, #5d4037, #3e2723);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0 0 10px;
+    }
+    header p {
+      font-size: 1.3em;
+      letter-spacing: 1px;
+    }
+    nav {
+      background-color: #5d4037;
+      text-align: center;
+      padding: 15px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li {
+      display: inline-block;
+      margin: 0 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      color: #3e2723;
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 2.2em;
+    }
+    .service-box {
+      background-color: white;
+      padding: 30px;
+      margin-top: 30px;
+      border-left: 8px solid #d4af37;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+    .service-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+    .service-box h3 {
+      margin-top: 0;
+      color: #5a3e36;
+    }
+    button {
+      display: inline-block;
+      background-color: #d4af37;
+      color: white;
+      padding: 14px 32px;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      transition: background-color 0.3s, transform 0.2s;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #bfa12f;
+      transform: scale(1.05);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 50px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .map {
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+    }
+    iframe {
+      border: 0;
+      width: 100%;
+      max-width: 900px;
+      height: 350px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    .contact, .order-form {
+      text-align: center;
+      margin-top: 60px;
+    }
+    .contact input, .contact textarea,
+    .order-form input, .order-form select, .order-form textarea {
+      width: 90%;
+      max-width: 520px;
+      padding: 12px;
+      margin: 12px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    .contact button, .order-form button {
+      margin-top: 20px;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      z-index: 100;
+    }
+    .whatsapp img {
+      width: 65px;
+      height: 65px;
+    }
+    .reviews {
+      margin-top: 80px;
+      text-align: center;
+    }
+    .review-box {
+      background: #fff;
+      border-left: 6px solid #5d4037;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 700px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      font-size: 1.1em;
+    }
+    .review-box strong {
+      display: block;
+      margin-top: 10px;
+      color: #3e2723;
+    }
+    .review-box img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    footer {
+      background-color: #3e2723;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 70px;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+  <section class="gallery">
+    <img src="https://via.placeholder.com/280x180.webp?text=Wedding+Shirts" alt="Wedding Shirts" loading="lazy" width="280" height="180">
+    <img src="https://via.placeholder.com/280x180.webp?text=Coats" alt="Coats" loading="lazy" width="280" height="180">
+    <img src="https://via.placeholder.com/280x180.webp?text=Trousers" alt="Trousers" loading="lazy" width="280" height="180">
+  </section>
+</body>
+</html>
